@@ -1,0 +1,22 @@
+body {
+	background-color: rgb(216, 206, 173);
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	color: rgb(166, 36, 47);
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+section {
+	width: 100%;
+	height: 200px;
+	border-color: #FFFFFF;
+}
+
+section.highlight {
+	background-color: rgb(192, 177, 143);
+	color: rgb(1, 28, 38);
+}
