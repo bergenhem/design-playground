@@ -1,13 +1,56 @@
+@font-face {
+    font-family: 'Amaranth';
+    src: url('fonts/Amaranth-webfont.eot');
+    src: url('fonts/Amaranth-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amaranth-webfont.woff') format('woff'),
+         url('fonts/Amaranth-webfont.ttf') format('truetype'),
+         url('fonts/Amaranth-webfont.svg#AmaranthRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+::selection {
+	background-color: rgb(242, 135, 5);
+	background-color: rgba(242, 135, 5, 1);
+	color: rgb(242, 242, 242);
+}
+
 body {
-	background-color: rgb(216, 206, 173);
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	background-color: rgb(138, 140, 132);
+	background-color: rgba(138, 140, 132, 1);
+	font-family: 'Amaranth', Helvetica, sans-serif;
 	font-weight: 300;
-	color: rgb(166, 36, 47);
+	color: rgb(38, 38, 34);
+	color: rgba(38, 38, 34, 1);
 }
 
 *{
 	margin: 0px;
 	padding: 0px;
+}
+
+header {
+	margin: 30px auto;
+	width: 1000px;
+	height: 100px;
+}
+
+header section#introduction h1 {
+	text-align: center;
+	font-size: 4em;
+	text-shadow: 1px 1px 1px #70736A, 2px 2px 2px #70736A;
+}
+
+footer {
+
+}
+
+mark {
+	color: rgb(242, 135, 5);
+	color: rgba(242, 135, 5, 1);
+	background-color: transparent;
+	text-shadow: 1px 1px 1px #70736A, 2px 2px 2px #70736A;
 }
 
 section {
@@ -16,7 +59,12 @@ section {
 	border-color: #FFFFFF;
 }
 
+section#introduction {
+
+}
+
 section.highlight {
-	background-color: rgb(192, 177, 143);
-	color: rgb(1, 28, 38);
+	background-color: rgb(112, 115, 106);
+	background-color: rgba(112, 115, 106, 1);
+	color: rgb(1, 28, 38);`
 }
