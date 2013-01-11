@@ -1,5 +1,12 @@
 /*MyApp = (function($){
-
+	return { 
+		init: function(){
+			sections.introduction = 0;
+			sections.about = $('section#about').position().top;
+			sections.portfolio = $('section#portfolio').position().top;
+			sections.contact = $('section#contact').position().top;
+		}
+	};
 })(jQUery);*/
 
 $(function() {
