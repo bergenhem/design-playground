@@ -1,21 +1,44 @@
-/*MyApp = (function($){
+MyApp = (function($){
+	var _introduction, _about, _portfolio, _contact;
+
+	function _calculatePositions(){
+		_introduction = 0;
+		_about = $('section#about').position().top;
+		_portfolio = $('section#portfolio').position().top;
+		_contact = $('section#contact').position().top;
+	}
+
+    function _populatePositions(positions){
+      positions.introduction = _introduction;
+      positions.about = _about;
+      positions.portfolio = _portfolio;
+      positions.contact = _contact;
+    }
+
 	return { 
 		init: function(){
-			sections.introduction = 0;
-			sections.about = $('section#about').position().top;
-			sections.portfolio = $('section#portfolio').position().top;
-			sections.contact = $('section#contact').position().top;
+			_calculatePositions()
+		},
+		getPositions: function(){
+			var positions = { };
+			_populatePositions(positions);
+			return positions;
 		}
+
 	};
-})(jQUery);*/
+})(jQuery);
 
 $(function() {
-	window.sections = { };
+	// window.sections = { };
 
-	sections.introduction = 0;
-	sections.about = $('section#about').position().top;
-	sections.portfolio = $('section#portfolio').position().top;
-	sections.contact = $('section#contact').position().top;
+	// sections.introduction = 0;
+	// sections.about = $('section#about').position().top;
+	// sections.portfolio = $('section#portfolio').position().top;
+	// sections.contact = $('section#contact').position().top;
+
+	MyApp.init();
+
+	var sections = MyApp.getPositions();
 
 	$(window).scroll(function (){
 		scrollTop = $(window).scrollTop();
