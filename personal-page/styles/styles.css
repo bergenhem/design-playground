@@ -79,29 +79,47 @@ section#navigation {
 
 nav {
 	margin: 20px auto;
-	width: 740px;
+	width: 815px;
 	z-index: 90px;
+}
+
+nav.pinned {
+	top:-80px;
+	left: -2px;
+	margin: 0 auto;
+	width: 100%;
+	position: fixed;
+	text-align: center;
+}
+
+nav.pinned a {
+	line-height: 220px;
 }
 
 nav a {
 	display: inline-block;
-	height: 150px;
-	width: 150px;
+	height: 170px;
+	width: 170px;
 	margin: 0 15px;
 	background-color: rgb(38, 38, 34);
 	background-color: rgba(38, 38, 34, 1);
 	color: rgb(242, 242, 242);
 	color: rgba(242, 242, 242, 1);
-	line-height: 150px;
+	line-height: 170px;
 	font-size: 2em;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 90px;
-	-webkit-transition: all 0.5s linear;
-	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 nav a:hover {
+	background-color: rgb(242, 135, 5);
+	background-color: rgba(242, 135, 5, 1);
+}
+
+nav a.selected {
 	background-color: rgb(242, 135, 5);
 	background-color: rgba(242, 135, 5, 1);
 }
