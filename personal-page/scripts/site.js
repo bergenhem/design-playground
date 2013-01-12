@@ -1,4 +1,4 @@
-MyApp = (function($){
+window.MyApp = (function($){
 	var _introduction, _about, _portfolio, _contact;
 
 	function _calculatePositions(){
@@ -29,13 +29,6 @@ MyApp = (function($){
 })(jQuery);
 
 $(function() {
-	// window.sections = { };
-
-	// sections.introduction = 0;
-	// sections.about = $('section#about').position().top;
-	// sections.portfolio = $('section#portfolio').position().top;
-	// sections.contact = $('section#contact').position().top;
-
 	MyApp.init();
 
 	var sections = MyApp.getPositions();
