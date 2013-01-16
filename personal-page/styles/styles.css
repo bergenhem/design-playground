@@ -53,9 +53,10 @@ mark {
 	text-shadow: 1px 1px 1px #70736A, 2px 2px 2px #70736A;
 }
 
-section {
+section#portfolio,
+section#contact {
 	width: 100%;
-	height: 200px;
+	height: 400px;
 	border-color: #FFFFFF;
 }
 
@@ -75,6 +76,21 @@ section#navigation {
 	border-bottom-color: rgba(38, 38, 34, 0.1);
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
+
+	height: 210px;
+}
+
+section#about {
+	margin: 20px auto;
+	width: 900px;
+}
+
+section#bio {
+	font-size: 1.4em;
+}
+
+h1 {
+	font-size: 2em;
 }
 
 nav {
