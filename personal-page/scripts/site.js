@@ -1,4 +1,4 @@
-window.MyApp = (function($){
+window.SiteApp = (function($){
 	var _introduction, _about, _portfolio, _contact, _scrollTop;
 	var _positions = {};
 
@@ -75,6 +75,10 @@ window.MyApp = (function($){
 	};
 })(jQuery);
 
+window.tileApp = (function($){
+
+})(jQuery);
+
 $(function() {
-	MyApp.init();
+	SiteApp.init();
 });
