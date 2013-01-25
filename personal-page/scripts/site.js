@@ -14,6 +14,8 @@ window.SiteApp = (function($){
       _positions.about = _about;
       _positions.portfolio = _portfolio;
       _positions.contact = _contact;
+
+      console.log(_positions);
     }
 
     function _setScrollTop(){
@@ -32,11 +34,14 @@ window.SiteApp = (function($){
     function _onScroll(e){
     	_removeSelected();
     	_setScrollTop();
-		if(_scrollTop > 305 && !$('nav').hasClass('pinned')){
+
+    	console.log(_scrollTop);
+
+		if(_scrollTop > 315 && !$('nav').hasClass('pinned')){
 			$('nav').addClass('pinned');
 		}
 
-		if(_scrollTop <= 300 && $('nav').hasClass('pinned')){
+		if(_scrollTop <= 315 && $('nav').hasClass('pinned')){
 			$('nav').removeClass('pinned');
 		}
 
@@ -54,6 +59,11 @@ window.SiteApp = (function($){
 		}
     }
 
+    function _onLoad(e){
+    	_calculatePositions()
+		_populatePositions();
+    }
+
     function _removeSelected(){
     	var currentSelected = $('nav a.selected');
     	if(currentSelected){
@@ -64,12 +74,11 @@ window.SiteApp = (function($){
     function _eventBinder() {
     	$('nav a').on('click', _onClick);
     	$(window).on('scroll', _onScroll);
+    	$(window).on('load', _onLoad);
     }
 
 	return { 
 		init: function(){
-			_calculatePositions()
-			_populatePositions();
 			_eventBinder();
 		}
 	};
