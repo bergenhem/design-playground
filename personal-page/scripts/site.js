@@ -32,11 +32,11 @@ window.SiteApp = (function($){
     function _onScroll(e){
     	_removeSelected();
     	_setScrollTop();
-		if(_scrollTop > 255 && !$('nav').hasClass('pinned')){
+		if(_scrollTop > 305 && !$('nav').hasClass('pinned')){
 			$('nav').addClass('pinned');
 		}
 
-		if(_scrollTop <= 255 && $('nav').hasClass('pinned')){
+		if(_scrollTop <= 300 && $('nav').hasClass('pinned')){
 			$('nav').removeClass('pinned');
 		}
 
