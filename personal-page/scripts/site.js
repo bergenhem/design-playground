@@ -14,8 +14,6 @@ window.SiteApp = (function($){
       _positions.about = _about;
       _positions.portfolio = _portfolio;
       _positions.contact = _contact;
-
-      console.log(_positions);
     }
 
     function _setScrollTop(){
@@ -34,8 +32,6 @@ window.SiteApp = (function($){
     function _onScroll(e){
     	_removeSelected();
     	_setScrollTop();
-
-    	console.log(_scrollTop);
 
 		if(_scrollTop > 315 && !$('nav').hasClass('pinned')){
 			$('nav').addClass('pinned');
