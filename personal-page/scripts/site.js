@@ -1,5 +1,7 @@
 window.SiteApp = (function($){
 	var _positions = {};
+    var _siteApp = {};
+    var _window = $(window);
 
 	function _calculatePositions(){
 		_positions.introduction = 0;
@@ -60,17 +62,14 @@ window.SiteApp = (function($){
 
     function _eventBinder() {
     	$('nav a').on('click', _onClick);
-    	$(window).on('scroll', _onScroll);
-    	$(window).on('load', _onLoad);
+    	_window.on('scroll', _onScroll);
+    	_window.on('load', _onLoad);
     }
 
-	return { 
-		init: function(){
-			_eventBinder();
-		}
-	};
-})(jQuery);
+    _siteApp.init = function(){
+        _eventBinder();
+    }
 
-window.tileApp = (function($){
+    return _siteApp;
 
 })(jQuery);
