@@ -83,7 +83,3 @@ window.SiteApp = (function($){
 window.tileApp = (function($){
 
 })(jQuery);
-
-$(function() {
-	SiteApp.init();
-});
