@@ -64,7 +64,6 @@ mark {
 	text-shadow: 1px 1px 1px #70736A, 2px 2px 2px #70736A;
 }
 
-section#portfolio,
 section#contact {
 	width: 100%;
 	height: 800px;
@@ -91,6 +90,18 @@ section#navigation {
 	height: 210px;
 }
 
+section#portfolio {
+	border-top-color: rgb(38, 38, 34);
+	border-top-color: rgba(38, 38, 34, 0.1);
+	border-top-style: solid;
+	border-top-width: 1px;
+
+	border-bottom-color: rgb(38, 38, 34);
+	border-bottom-color: rgba(38, 38, 34, 0.1);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
 section#about {
 	margin: 20px auto;
 	width: 900px;
@@ -113,7 +124,7 @@ nav {
 	font-family: 'LeagueGothicRegular', Helvetica, sans-serif;
 	margin: 20px auto;
 	width: 815px;
-	z-index: 90px;
+	z-index: 90;
 }
 
 nav.pinned {
@@ -158,17 +169,16 @@ nav a.selected {
 }
 
 .container {
-	width: 200px;
-	height: 260px;
-	position: relative;
+	width: 250px;
+	height: 250px;
+	margin: 20px;
 	-webkit-perspective: 800px;
 	perspective: 800px;
 }
 
 #card {
-	width: 200px;
-	height: 260px;
-	position: absolute;
+	width: 250px;
+	height: 250px;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 	-webkit-transition: 1s;
@@ -177,10 +187,9 @@ nav a.selected {
 
 #card .front,
 #card .back {
-	display: block;
 	position: absolute;
-	width: 200px;
-	height: 260px;
+	width: 250px;
+	height: 250px;
 	-webkit-backface-visibility: hidden;
 	backface-visibilty: hidden;
 }
@@ -198,4 +207,13 @@ nav a.selected {
 #card:hover {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
+}
+
+.tileView div {
+	display: inline-block;
+}
+
+.tileView {
+	width: 880px;
+	margin: 20px auto;
 }
