@@ -1,20 +1,12 @@
 window.SiteApp = (function($){
-	var _introduction, _about, _portfolio, _contact, _scrollTop;
 	var _positions = {};
 
 	function _calculatePositions(){
-		_introduction = 0;
-		_about = $('section#about').position().top - 40;
-		_portfolio = $('section#portfolio').position().top - 40;
-		_contact = $('section#contact').position().top - 40;
+		_positions.introduction = 0;
+		_positions.about = $('section#about').position().top - 40;
+		_positions.portfolio = $('section#portfolio').position().top - 40;
+		_positions.contact = $('section#contact').position().top - 40;
 	}
-
-    function _populatePositions(){
-      _positions.introduction = _introduction;
-      _positions.about = _about;
-      _positions.portfolio = _portfolio;
-      _positions.contact = _contact;
-    }
 
     function _setScrollTop(){
     	_scrollTop = $(window).scrollTop();
@@ -56,15 +48,14 @@ window.SiteApp = (function($){
     }
 
     function _onLoad(e){
-    	_calculatePositions()
-		_populatePositions();
+    	_calculatePositions();
     }
 
     function _removeSelected(){
-    	var currentSelected = $('nav a.selected');
-    	if(currentSelected){
-    		currentSelected.removeClass('selected');
-    	}
+        var currentSelected = $('nav a.selected');
+        if(currentSelected){
+            currentSelected.removeClass('selected');
+        }
     }
 
     function _eventBinder() {
