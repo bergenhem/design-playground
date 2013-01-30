@@ -3,6 +3,7 @@ window.SiteApp = (function($){
     var _siteApp = {};
     var _window = $(window);
 
+    // Used to calculate top X co-ordinate of the sections
 	function _calculatePositions(){
 		_positions.introduction = 0;
 		_positions.about = $('section#about').position().top - 40;
@@ -10,31 +11,46 @@ window.SiteApp = (function($){
 		_positions.contact = $('section#contact').position().top - 40;
 	}
 
+    // Retrieve the top of the scroll bar
     function _setScrollTop(){
-    	_scrollTop = $(window).scrollTop();
+    	_scrollTop = _window.scrollTop();
+    }
+
+    function _removeSelected(){
+        var currentSelected = $('nav a.selected');
+        if(currentSelected){
+            currentSelected.removeClass('selected');
+        }
     }
 
     function _onClick(e){
     	e.preventDefault();
-    	$('html, body').animate({
-    		scrollTop: _positions[$(this).attr('href')]
-    	}, 'slow');
+        var $this = $(this);
+        
+        $this.addClass('selected');
 
-    	$(this).addClass('selected');
+        // Animate the page to scroll to selected section
+        $('html, body').animate({
+    		scrollTop: _positions[$this.attr('href')]
+    	}, 'slow');
     }
 
     function _onScroll(e){
     	_removeSelected();
     	_setScrollTop();
 
-		if(_scrollTop > 315 && !$('nav').hasClass('pinned')){
-			$('nav').addClass('pinned');
+        var navElements = $('nav');
+
+        // Pin or un-pin the menu to the top
+		if(_scrollTop > 315 && !navElements.hasClass('pinned')){
+			navElements.addClass('pinned');
 		}
 
-		if(_scrollTop <= 315 && $('nav').hasClass('pinned')){
-			$('nav').removeClass('pinned');
+		if(_scrollTop <= 315 && navElements.hasClass('pinned')){
+			navElements.removeClass('pinned');
 		}
 
+        // Figure out what menu item should be selected
 		if(_scrollTop < _positions.about){
 			$('a[href=introduction]').addClass('selected');
 		}
@@ -53,16 +69,11 @@ window.SiteApp = (function($){
     	_calculatePositions();
     }
 
-    function _removeSelected(){
-        var currentSelected = $('nav a.selected');
-        if(currentSelected){
-            currentSelected.removeClass('selected');
-        }
-    }
-
     function _eventBinder() {
     	$('nav a').on('click', _onClick);
     	_window.on('scroll', _onScroll);
+
+        // Need this for @font-face items to be loaded
     	_window.on('load', _onLoad);
     }
 
