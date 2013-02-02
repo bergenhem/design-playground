@@ -168,46 +168,7 @@ nav a.selected {
 	background-color: rgba(242, 135, 5, 1);
 }
 
-.container {
-	width: 250px;
-	height: 250px;
-	margin: 20px;
-	-webkit-perspective: 800px;
-	perspective: 800px;
-}
-
-#card {
-	width: 250px;
-	height: 250px;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-transition: 1s;
-	transition: transform 1s;
-}
-
-#card .front,
-#card .back {
-	position: absolute;
-	width: 250px;
-	height: 250px;
-	-webkit-backface-visibility: hidden;
-	backface-visibilty: hidden;
-}
-
-#card .front {
-	background: red;
-}
-
-#card .back {
-	background: blue;
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-}
-
-#card:hover {
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-}
+/* TileView Section */
 
 .tileView div {
 	display: inline-block;
@@ -217,3 +178,59 @@ nav a.selected {
 	width: 880px;
 	margin: 20px auto;
 }
+
+/* Parent container for 3D Space */
+.tileContainer {
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+
+	/* Set up the 3D space with perspective */
+	-webkit-perspective: 800px;
+	perspective: 800px;
+}
+
+#tile {
+	width: 100%;
+	height: 100%;
+
+	/* Pass our 3D space to our children (front and back) */
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: 1s;
+	transition: transform 1s;
+}
+
+#tile .front,
+#tile .back {
+	width: 100%;
+	height: 100%;
+
+	/* Set our tiles to the same X and Y position in 3D space */
+	position: absolute;
+
+	/* Tell our sides to hide when on the back side */
+	-webkit-backface-visibility: hidden;
+	backface-visibilty: hidden;
+}
+
+#tile .front {
+	background: red;
+}
+
+#tile .back {
+	background: blue;
+
+	/* Start with the back already facing back 8 */
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+#tile:hover {
+
+	/* Rotate around the y-axis to display the opposite side */
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+/* End TileView Section */
