@@ -60,8 +60,34 @@ footer {
 	background-color: rgba(112, 115, 106, 1);
 }
 
-footer p {
+footer div#copyright {
+	margin: 20px auto;
+	width: 800px;
+	text-align: center;
+}
 
+footer a:link {
+	text-decoration: none;
+	color: rgb(242, 242, 242);
+	color: rgba(242, 242, 242, 1);
+}
+
+footer a:visited {
+	text-decoration: none;
+	color: rgb(242, 242, 242);
+	color: rgba(242, 242, 242, 1);
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: rgb(242, 135, 5);
+	color: rgba(242, 135, 5, 1);
+}
+
+footer a:active {
+	text-decoration: none;
+	color: rgb(242, 135, 5);
+	color: rgba(242, 135, 5, 1);
 }
 
 mark {
