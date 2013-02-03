@@ -278,7 +278,7 @@ section#portfolio {
 	border-style: solid;
 	border-color: rgb(138, 140, 132);
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.75em;
 	color: rgb(242, 242, 242);
 	line-height: 240px;
 }
@@ -290,6 +290,9 @@ section#portfolio {
 }
 
 #tile .back img {
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgba(38, 38, 34, 1);
 	border-radius: 180px;
 }
 
