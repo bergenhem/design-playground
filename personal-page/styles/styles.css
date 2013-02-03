@@ -127,13 +127,10 @@ section#contact section#contactButtons {
 	margin-bottom: 40px;
 }
 
-section.highlight {
+div.highlight {
 	background-color: rgb(112, 115, 106);
 	background-color: rgba(112, 115, 106, 1);
-	color: rgb(1, 28, 38);`
-}
-
-section#navigation {
+	color: rgb(1, 28, 38);
 	border-top-color: rgb(38, 38, 34);
 	border-top-color: rgba(38, 38, 34, 0.1);
 	border-top-style: solid;
@@ -143,20 +140,11 @@ section#navigation {
 	border-bottom-color: rgba(38, 38, 34, 0.1);
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
-
-	height: 210px;
 }
 
 section#portfolio {
-	border-top-color: rgb(38, 38, 34);
-	border-top-color: rgba(38, 38, 34, 0.1);
-	border-top-style: solid;
-	border-top-width: 1px;
-
-	border-bottom-color: rgb(38, 38, 34);
-	border-bottom-color: rgba(38, 38, 34, 0.1);
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
+	margin: 20px auto;
+	width: 900px;
 }
 
 section#about {
@@ -197,9 +185,9 @@ nav.pinned {
 
 nav.pinned a {
 	line-height: 220px;
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(138, 140, 132, 0.8);
-	box-shadow: 0px 0px 10px 0px rgba(138, 140, 132, 0.8);
-	box-shadow: 0px 0px 10px 0px rgb(138, 140, 132);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(138, 140, 132, 0.8);
+	box-shadow: 0px 0px 8px 0px rgb(138, 140, 132);
+	box-shadow: 0px 0px 8px 0px rgba(138, 140, 132, 0.8);
 }
 
 nav a {
@@ -268,6 +256,8 @@ nav a.selected {
 	width: 100%;
 	height: 100%;
 
+	border-radius: 180px;
+
 	/* Set our tiles to the same X and Y position in 3D space */
 	position: absolute;
 
@@ -285,13 +275,17 @@ nav a.selected {
 	text-align: center;
 	font-size: 2em;
 	color: rgb(242, 242, 242);
-	line-height: 230px;
+	line-height: 240px;
 }
 
 #tile .back {
 	/* Start with the back already facing back 8 */
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
+}
+
+#tile .back img {
+	border-radius: 180px;
 }
 
 #tile:hover {
