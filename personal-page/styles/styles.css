@@ -54,7 +54,14 @@ header section#introduction h1 {
 }
 
 footer {
+	width: 100%;
+	height: 100px;
+	background-color: rgb(112, 115, 106);
+	background-color: rgba(112, 115, 106, 1);
+}
 
+footer p {
+	
 }
 
 mark {
@@ -65,9 +72,38 @@ mark {
 }
 
 section#contact {
-	width: 100%;
-	height: 800px;
-	border-color: #FFFFFF;
+	margin: 20px auto;
+	width: 815px;
+}
+
+section#contact button.contactIcon {
+	display: inline-block;
+	height: 170px;
+	width: 170px;
+	margin: 0 15px;
+	border: none;
+	background-color: rgb(38, 38, 34);
+	background-color: rgba(38, 38, 34, 1);
+	color: rgb(242, 242, 242);
+	color: rgba(242, 242, 242, 1);
+	line-height: 170px;
+	font-size: 3em;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 90px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+section#contact section#contactText p{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-size: 2em;
+}
+
+section#contact section#contactButtons {
+	margin-top: 20px;
+	margin-bottom: 100px;
 }
 
 section.highlight {
