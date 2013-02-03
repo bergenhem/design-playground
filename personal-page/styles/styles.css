@@ -64,7 +64,6 @@ mark {
 	text-shadow: 1px 1px 1px #70736A, 2px 2px 2px #70736A;
 }
 
-section#portfolio,
 section#contact {
 	width: 100%;
 	height: 800px;
@@ -91,6 +90,18 @@ section#navigation {
 	height: 210px;
 }
 
+section#portfolio {
+	border-top-color: rgb(38, 38, 34);
+	border-top-color: rgba(38, 38, 34, 0.1);
+	border-top-style: solid;
+	border-top-width: 1px;
+
+	border-bottom-color: rgb(38, 38, 34);
+	border-bottom-color: rgba(38, 38, 34, 0.1);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
 section#about {
 	margin: 20px auto;
 	width: 900px;
@@ -113,7 +124,7 @@ nav {
 	font-family: 'LeagueGothicRegular', Helvetica, sans-serif;
 	margin: 20px auto;
 	width: 815px;
-	z-index: 90px;
+	z-index: 90;
 }
 
 nav.pinned {
@@ -127,6 +138,9 @@ nav.pinned {
 
 nav.pinned a {
 	line-height: 220px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(138, 140, 132, 0.8);
+	box-shadow: 0px 0px 10px 0px rgba(138, 140, 132, 0.8);
+	box-shadow: 0px 0px 10px 0px rgb(138, 140, 132);
 }
 
 nav a {
@@ -156,3 +170,76 @@ nav a.selected {
 	background-color: rgb(242, 135, 5);
 	background-color: rgba(242, 135, 5, 1);
 }
+
+/* TileView Section */
+
+.tileView div {
+	display: inline-block;
+}
+
+.tileView {
+	width: 880px;
+	margin: 20px auto;
+}
+
+/* Parent container for 3D Space */
+.tileContainer {
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+
+	/* Set up the 3D space with perspective */
+	-webkit-perspective: 800px;
+	perspective: 800px;
+}
+
+#tile {
+	width: 100%;
+	height: 100%;
+
+	/* Pass our 3D space to our children (front and back) */
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: 1s;
+	transition: transform 1s;
+}
+
+#tile .front,
+#tile .back {
+	width: 100%;
+	height: 100%;
+
+	/* Set our tiles to the same X and Y position in 3D space */
+	position: absolute;
+
+	/* Tell our sides to hide when on the back side */
+	-webkit-backface-visibility: hidden;
+	backface-visibilty: hidden;
+}
+
+#tile .front {
+	background-color: rgb(38, 38, 34);
+	background-color: rgba(38, 38, 34, 1);
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(138, 140, 132);
+	text-align: center;
+	font-size: 2em;
+	color: rgb(242, 242, 242);
+	line-height: 230px;
+}
+
+#tile .back {
+	/* Start with the back already facing back 8 */
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+#tile:hover {
+
+	/* Rotate around the y-axis to display the opposite side */
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+/* End TileView Section */
