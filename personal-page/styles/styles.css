@@ -61,7 +61,7 @@ footer {
 }
 
 footer p {
-	
+
 }
 
 mark {
@@ -76,7 +76,7 @@ section#contact {
 	width: 815px;
 }
 
-section#contact button.contactIcon {
+section#contact a.contactIcon {
 	display: inline-block;
 	height: 170px;
 	width: 170px;
@@ -98,12 +98,13 @@ section#contact button.contactIcon {
 section#contact section#contactText p{
 	margin-top: 20px;
 	margin-bottom: 40px;
-	font-size: 2em;
+	margin-left: 20px;
+	font-size: 1.75em;
 }
 
 section#contact section#contactButtons {
 	margin-top: 20px;
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 }
 
 section.highlight {
@@ -144,11 +145,13 @@ section#about {
 }
 
 section#about p {
-	margin: 20px auto;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 section#bio {
-	font-size: 2em;
+	font-size: 1.75em;
 }
 
 section h1 {
