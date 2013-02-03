@@ -95,6 +95,26 @@ section#contact a.contactIcon {
 	transition: all 0.5s;
 }
 
+section#contact a.twitter:hover {
+	background-color: rgb(64, 153, 255);
+	background-color: rgba(64, 153, 255, 1);
+}
+
+section#contact a.github:hover {
+	background-color: rgb(15, 154, 214);
+	background-color: rgba(65,131,196,1)
+}
+
+section#contact a.gplus:hover {
+	background-color: rgb(219, 90, 60);
+	background-color: rgba(219, 90, 60, 1);
+}
+
+section#contact a.email:hover {
+	background-color: rgb(242, 135, 5);
+	background-color: rgba(7, 184, 60, 1);
+}
+
 section#contact section#contactText p{
 	margin-top: 20px;
 	margin-bottom: 40px;
