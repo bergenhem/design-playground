@@ -22,10 +22,9 @@
 
 }
 
-::selection {
-	background-color: rgb(242, 135, 5);
-	background-color: rgba(242, 135, 5, 1);
-	color: rgb(242, 242, 242);
+* {
+	margin: 0px;
+	padding: 0px;
 }
 
 body {
@@ -37,98 +36,10 @@ body {
 	color: rgba(38, 38, 34, 1);
 }
 
-*{
-	margin: 0px;
-	padding: 0px;
-}
-
-header {
-	margin: 30px auto;
-	width: 1000px;
-}
-
-header section#introduction h1 {
-	text-align: center;
-	font-size: 8.25em;
-	text-shadow: 1px 1px 1px #70736A, 2px 2px 2px #70736A;
-}
-
-footer {
-	width: 100%;
-	height: 100px;
-	background-color: rgb(112, 115, 106);
-	background-color: rgba(112, 115, 106, 1);
-}
-
-footer p {
-
-}
-
-mark {
-	color: rgb(242, 135, 5);
-	color: rgba(242, 135, 5, 1);
-	background-color: transparent;
-	text-shadow: 1px 1px 1px #70736A, 2px 2px 2px #70736A;
-}
-
-section#contact {
-	margin: 20px auto;
-	width: 815px;
-}
-
-section#navigation {
-	height: 190px;
-}
-
-section#contact a.contactIcon {
-	display: inline-block;
-	height: 170px;
-	width: 170px;
-	margin: 0 15px;
-	border: none;
-	background-color: rgb(38, 38, 34);
-	background-color: rgba(38, 38, 34, 1);
-	color: rgb(242, 242, 242);
-	color: rgba(242, 242, 242, 1);
-	line-height: 170px;
-	font-size: 3em;
-	text-align: center;
-	text-decoration: none;
-	border-radius: 90px;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-section#contact a.twitter:hover {
-	background-color: rgb(64, 153, 255);
-	background-color: rgba(64, 153, 255, 1);
-}
-
-section#contact a.github:hover {
-	background-color: rgb(15, 154, 214);
-	background-color: rgba(65,131,196,1)
-}
-
-section#contact a.gplus:hover {
-	background-color: rgb(219, 90, 60);
-	background-color: rgba(219, 90, 60, 1);
-}
-
-section#contact a.email:hover {
+::selection {
 	background-color: rgb(242, 135, 5);
-	background-color: rgba(7, 184, 60, 1);
-}
-
-section#contact section#contactText p{
-	margin-top: 20px;
-	margin-bottom: 40px;
-	margin-left: 20px;
-	font-size: 1.75em;
-}
-
-section#contact section#contactButtons {
-	margin-top: 20px;
-	margin-bottom: 40px;
+	background-color: rgba(242, 135, 5, 1);
+	color: rgb(242, 242, 242);
 }
 
 div.highlight {
@@ -146,29 +57,26 @@ div.highlight {
 	border-bottom-width: 1px;
 }
 
-section#portfolio {
-	margin: 20px auto;
-	width: 900px;
-}
-
-section#about {
-	margin: 20px auto;
-	width: 900px;
-}
-
-section#about p {
-	margin-top: 20px;
-	margin-left: 20px;
-	margin-bottom: 20px;
-}
-
-section#bio {
-	font-size: 1.75em;
-}
-
 section h1 {
 	font-size: 4em;
 	font-family: 'LeagueGothicRegular', Helvetica, sans-serif;
+}
+
+header {
+	margin: 30px auto;
+	width: 1000px;
+}
+
+header section#introduction h1 {
+	text-align: center;
+	font-size: 8.25em;
+	text-shadow: 1px 1px 1px #70736A, 2px 2px 2px #70736A;
+}
+
+/* Navigation Section */
+
+section#navigation {
+	height: 190px;
 }
 
 nav {
@@ -222,7 +130,100 @@ nav a.selected {
 	background-color: rgba(242, 135, 5, 1);
 }
 
+/* End Navigation Section */
+
+section#bio {
+	font-size: 1.75em;
+}
+
+section#about {
+	margin: 20px auto;
+	width: 900px;
+}
+
+section#about p {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+/* Contact Section */
+
+section#contact {
+	margin: 20px auto;
+	width: 815px;
+}
+
+section#contact a.contactIcon {
+	display: inline-block;
+	height: 170px;
+	width: 170px;
+	margin: 0 15px;
+	border: none;
+	background-color: rgb(38, 38, 34);
+	background-color: rgba(38, 38, 34, 1);
+	color: rgb(242, 242, 242);
+	color: rgba(242, 242, 242, 1);
+	line-height: 170px;
+	font-size: 3em;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 90px;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+section#contact a.twitter:hover {
+	background-color: rgb(64, 153, 255);
+	background-color: rgba(64, 153, 255, 1);
+}
+
+section#contact a.github:hover {
+	background-color: rgb(15, 154, 214);
+	background-color: rgba(65,131,196,1)
+}
+
+section#contact a.gplus:hover {
+	background-color: rgb(219, 90, 60);
+	background-color: rgba(219, 90, 60, 1);
+}
+
+section#contact a.email:hover {
+	background-color: rgb(242, 135, 5);
+	background-color: rgba(7, 184, 60, 1);
+}
+
+section#contact img {
+	border: 1px solid rgba(112, 115, 106, 1);
+	-webkit-box-shadow: 15px 15px 1px 1px rgba(112, 115, 106, 1);
+	box-shadow: 15px 15px 1px 1px rgba(112, 115, 106, 1);
+}
+
+section#contact section#contactText p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	font-size: 1.75em;
+}
+
+section#contact div#contactImgWrapper {
+	width: 300px;
+	margin: 20px auto;
+}
+
+section#contact section#contactButtons {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+/* End Contact Section */
+
 /* TileView Section */
+
+section#portfolio {
+	margin: 20px auto;
+	width: 900px;
+}
 
 .tileView div {
 	display: inline-block;
@@ -277,7 +278,7 @@ nav a.selected {
 	border-style: solid;
 	border-color: rgb(138, 140, 132);
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.75em;
 	color: rgb(242, 242, 242);
 	line-height: 240px;
 }
@@ -289,6 +290,9 @@ nav a.selected {
 }
 
 #tile .back img {
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgba(38, 38, 34, 1);
 	border-radius: 180px;
 }
 
@@ -300,3 +304,42 @@ nav a.selected {
 }
 
 /* End TileView Section */
+
+/* Footer Section */
+footer {
+	width: 100%;
+	background-color: rgb(112, 115, 106);
+	background-color: rgba(112, 115, 106, 1);
+}
+
+footer div#copyright {
+	margin: 20px auto;
+	width: 800px;
+	text-align: center;
+}
+
+footer a:link {
+	text-decoration: none;
+	color: rgb(242, 242, 242);
+	color: rgba(242, 242, 242, 1);
+}
+
+footer a:visited {
+	text-decoration: none;
+	color: rgb(242, 242, 242);
+	color: rgba(242, 242, 242, 1);
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: rgb(242, 135, 5);
+	color: rgba(242, 135, 5, 1);
+}
+
+footer a:active {
+	text-decoration: none;
+	color: rgb(242, 135, 5);
+	color: rgba(242, 135, 5, 1);
+}
+
+/* End Footer Section */
