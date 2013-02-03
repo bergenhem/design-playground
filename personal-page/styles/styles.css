@@ -290,10 +290,10 @@ section#portfolio {
 }
 
 #tile .back img {
-	border-width: 2px;
-	border-style: solid;
-	border-color: rgba(38, 38, 34, 1);
 	border-radius: 180px;
+	-webkit-background-clip: border-box;
+	background-clip: border-box;
+	box-shadow: 0 0 0 2px rgba(38, 38, 34, 1);
 }
 
 #tile:hover {
