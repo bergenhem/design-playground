@@ -157,6 +157,11 @@ section#contact section#contactText p{
 	font-size: 1.75em;
 }
 
+section#contact div#contactImgWrapper {
+	width: 300px;
+	margin: 20px auto;
+}
+
 section#contact section#contactButtons {
 	margin-top: 20px;
 	margin-bottom: 40px;
