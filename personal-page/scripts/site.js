@@ -6,9 +6,9 @@ window.SiteApp = (function($){
     // Used to calculate top X co-ordinate of the sections
 	function _calculatePositions(){
 		_positions.introduction = 0;
-		_positions.about = $('section#about').position().top - 40;
-		_positions.portfolio = $('section#portfolio').position().top - 40;
-		_positions.contact = $('section#contact').position().top - 40;
+		_positions.about = $('section#about').position().top - 100;
+		_positions.portfolio = $('section#portfolio').position().top - 100;
+		_positions.contact = $('section#contact').position().top - 100;
 	}
 
     // Retrieve the top of the scroll bar
