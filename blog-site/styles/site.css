@@ -10,7 +10,40 @@
 
 }
 
+/* https://kuler.adobe.com/blog-site-color-theme-2548043/ */
+
 * {
 	margin: 0px;
 	padding: 0px;
+}
+
+body {
+	background-color: rgb(242, 242, 242);
+	font-family: 'OpenSans', Helvetica;
+	font-size: 12px;
+}
+
+header {
+	background-color: rgb(126, 138, 162);
+	color: rgb(38, 50, 72);
+	height: 50px;
+	width: 100%;
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+header:hover {
+	background-color: rgb(38, 50, 72);
+	color: rgb(126, 138, 162);
+}
+
+header p {
+	font-size: 2em;
+	line-height: 2em;
+	margin-left: 10px;
+}
+
+section#content {
 }
