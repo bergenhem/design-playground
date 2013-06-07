@@ -49,6 +49,50 @@ section#content {
 	position: relative;
 }
 
+section#content ul li a {
+	text-decoration: none;
+}
+
+section#content ul li a:link {
+	color: rgb(82, 82, 82);
+}
+
+section#content ul li a:visited {
+	color: rgb(82, 82, 82);
+}
+
+section#content ul li a:hover {
+	color: rgb(82, 82, 82);
+}
+
+section#content ul li a:focus {
+	color: rgb(82, 82, 82);
+}
+
+section#content ul li a:active {
+	color: rgb(82, 82, 82);
+}
+
+section#content ul li:hover a:link {
+	color: rgb(229, 229, 229);
+}
+
+section#content ul li:hover a:visited {
+	color: rgb(229, 229, 229);
+}
+
+section#content ul li:hover a:hover {
+	color: rgb(229, 229, 229);
+}
+
+section#content ul li:hover a:focus {
+	color: rgb(229, 229, 229);
+}
+
+section#content ul li:hover a:active {
+	color: rgb(229, 229, 229);
+}
+
 section#content ul {
 	list-style-type: none;
 	margin-top: 100px;
@@ -63,6 +107,10 @@ section#content ul li {
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 10px;
+}
+
+section#content ul li:hover {
+	background-color: rgb(189, 189, 189);
 }
 
 section#content ul li a {
