@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: rgb(47, 47, 47);
+	color: rgb(255, 255, 255);
+	font-family: 'OpenSans', Helvetica;
+	font-size: 12px;
+}
+
+header {
+	background-color: rgb(17, 17, 17);
+	color: rgb(167, 208, 25);
+	height: 50px;
+	width: 100%;
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+header p {
+	font-size: 2em;
+	line-height: 2em;
+	margin-left: 10px;
+}
+
+header nav {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+header nav ul li {
+	display: inline-block;
+	height: 50px;
+	width: 100px;
+	text-align: center;
+}
+
+header nav ul li:hover {
+	background-color: rgb(167, 208, 25);
+}
+
+header nav ul li a {
+	font-size: 2em;
+	line-height: 2em;
+	text-decoration: none;
+}
+
+header nav ul li a:link {
+	color: rgb(167, 208, 25);
+}
+
+header nav ul li a:visited {
+	color: rgb(167, 208, 25);
+}
+
+header nav ul li a:hover {
+	color: rgb(167, 208, 25);
+}
+
+header nav ul li a:focus {
+	color: rgb(167, 208, 25);
+}
+
+header nav ul li a:active {
+	color: rgb(167, 208, 25);
+}
+
+header nav ul li:hover a:link {
+	color: rgb(17, 17, 17);
+	border-bottom: 3px solid;
+}
+
+header nav ul li:hover a:visited {
+	color: rgb(17, 17, 17);
+}
+
+header nav ul li:hover a:hover {
+	color: rgb(17, 17, 17);
+	border-bottom: 3px solid;
+}
+
+header nav ul li:hover a:focus {
+	color: rgb(17, 17, 17);
+}
+
+header nav ul li:hover a:active {
+	color: rgb(17, 17, 17);
+}
+
+section#content {
+	position: relative;
+}
+
+section#content ul li a {
+	text-decoration: none;
+}
+
+section#content ul li a:link {
+	color: rgb(167, 208, 25);
+}
+
+section#content ul li a:visited {
+	color: rgb(167, 208, 25);
+}
+
+section#content ul li a:hover {
+	color: rgb(167, 208, 25);
+}
+
+section#content ul li a:focus {
+	color: rgb(167, 208, 25);
+}
+
+section#content ul li a:active {
+	color: rgb(167, 208, 25);
+}
+
+section#content ul li:hover a:link {
+	color: rgb(47, 47, 47);
+	border-bottom: 3px solid;
+}
+
+section#content ul li:hover a:visited {
+	color: rgb(47, 47, 47);
+}
+
+section#content ul li:hover a:hover {
+	color: rgb(47, 47, 47);
+	border-bottom: 3px solid;
+}
+
+section#content ul li:hover a:focus {
+	color: rgb(47, 47, 47);
+}
+
+section#content ul li:hover a:active {
+	color: rgb(47, 47, 47);
+}
+
+section#content ul {
+	list-style-type: none;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+section#content ul li {
+	font-size: 2em;
+	width: 800px;
+	margin: 0px auto;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+
+	border-bottom: 1px solid rgb(17, 17, 17);
+}
+
+section#content ul li:hover {
+	background-color: rgb(167, 208, 25);
+}
+
+section#content ul li div.postDate {
+	float: right;
+	font-size: 0.75em;
+	line-height: 2em;
+}
