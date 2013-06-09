@@ -18,15 +18,15 @@
 }
 
 body {
-	background-color: #FFFFFF;
-	color: rgb(145, 145, 145);
+	background-color: rgb(47, 47, 47);
+	color: rgb(255, 255, 255);
 	font-family: 'OpenSans', Helvetica;
 	font-size: 12px;
 }
 
 header {
-	background-color: rgb(245, 245, 245);
-	color: rgb(0, 0, 0);
+	background-color: rgb(17, 17, 17);
+	color: rgb(167, 208, 25);
 	height: 50px;
 	width: 100%;
 
@@ -41,6 +41,36 @@ header p {
 	margin-left: 10px;
 }
 
+nav {
+	position: absolute;
+	top: 150px;
+	left: 20px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li a:link {
+	color: rgb(167, 208, 25);
+}
+
+nav ul li a:visited {
+	color: rgb(167, 208, 25);
+}
+
+nav ul li a:hover {
+	color: rgb(167, 208, 25);
+}
+
+nav ul li a:focus {
+	color: rgb(167, 208, 25);
+}
+
+nav ul li a:active {
+	color: rgb(167, 208, 25);
+}
+
 section#content {
 	position: relative;
 }
@@ -50,45 +80,45 @@ section#content ul li a {
 }
 
 section#content ul li a:link {
-	color: rgb(0, 0, 0);
+	color: rgb(167, 208, 25);
 }
 
 section#content ul li a:visited {
-	color: rgb(0, 0, 0);
+	color: rgb(167, 208, 25);
 }
 
 section#content ul li a:hover {
-	color: rgb(0, 0, 0);
+	color: rgb(167, 208, 25);
 }
 
 section#content ul li a:focus {
-	color: rgb(0, 0, 0);
+	color: rgb(167, 208, 25);
 }
 
 section#content ul li a:active {
-	color: rgb(0, 0, 0);
+	color: rgb(167, 208, 25);
 }
 
 section#content ul li:hover a:link {
-	color: rgb(0, 0, 0);
-	border-bottom: 3px solid rgb(0, 0, 0);
+	color: rgb(47, 47, 47);
+	border-bottom: 3px solid;
 }
 
 section#content ul li:hover a:visited {
-	color: rgb(0, 0, 0);
+	color: rgb(47, 47, 47);
 }
 
 section#content ul li:hover a:hover {
-	color: rgb(0, 0, 0);
-	border-bottom: 3px solid rgb(0, 0, 0);
+	color: rgb(47, 47, 47);
+	border-bottom: 3px solid;
 }
 
 section#content ul li:hover a:focus {
-	color: rgb(0, 0, 0);
+	color: rgb(47, 47, 47);
 }
 
 section#content ul li:hover a:active {
-	color: rgb(0, 0, 0);
+	color: rgb(47, 47, 47);
 }
 
 section#content ul {
@@ -106,11 +136,11 @@ section#content ul li {
 	padding-right: 30px;
 	padding-bottom: 10px;
 
-	border-bottom: 1px solid rgb(235, 235, 235);
+	border-bottom: 1px solid rgb(17, 17, 17);
 }
 
 section#content ul li:hover {
-	background-color: rgb(245, 245, 245);
+	background-color: rgb(167, 208, 25);
 }
 
 section#content ul li div.postDate {
