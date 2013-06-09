@@ -41,34 +41,69 @@ header p {
 	margin-left: 10px;
 }
 
-nav {
+header nav {
 	position: absolute;
-	top: 150px;
-	left: 20px;
+	top: 0px;
+	right: 0px;
 }
 
-nav ul {
-	list-style-type: none;
+header nav ul li {
+	display: inline-block;
+	height: 50px;
+	width: 100px;
+	text-align: center;
 }
 
-nav ul li a:link {
+header nav ul li:hover {
+	background-color: rgb(167, 208, 25);
+}
+
+header nav ul li a {
+	font-size: 2em;
+	line-height: 2em;
+	text-decoration: none;
+}
+
+header nav ul li a:link {
 	color: rgb(167, 208, 25);
 }
 
-nav ul li a:visited {
+header nav ul li a:visited {
 	color: rgb(167, 208, 25);
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
 	color: rgb(167, 208, 25);
 }
 
-nav ul li a:focus {
+header nav ul li a:focus {
 	color: rgb(167, 208, 25);
 }
 
-nav ul li a:active {
+header nav ul li a:active {
 	color: rgb(167, 208, 25);
+}
+
+header nav ul li:hover a:link {
+	color: rgb(17, 17, 17);
+	border-bottom: 3px solid;
+}
+
+header nav ul li:hover a:visited {
+	color: rgb(17, 17, 17);
+}
+
+header nav ul li:hover a:hover {
+	color: rgb(17, 17, 17);
+	border-bottom: 3px solid;
+}
+
+header nav ul li:hover a:focus {
+	color: rgb(17, 17, 17);
+}
+
+header nav ul li:hover a:active {
+	color: rgb(17, 17, 17);
 }
 
 section#content {
