@@ -177,7 +177,7 @@ section#content ul li:hover {
 }
 
 section#content ul li div.postDate {
-	float: right;
+	float: left;
 	font-size: 0.75em;
 	line-height: 2em;
 }
