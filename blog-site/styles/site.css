@@ -28,9 +28,8 @@ header {
 	height: 50px;
 	width: 100%;
 
-	position: fixed;
-	top: 0px;
-	left: 0px;
+	position: relative;
+	margin-bottom: 30px;
 }
 
 header p {
@@ -156,14 +155,13 @@ section#content ul li:hover a:active {
 
 section#content ul {
 	list-style-type: none;
-	margin-top: 100px;
-	margin-bottom: 100px;
 }
 
 section#content ul li {
 	font-size: 2em;
 	width: 800px;
 	margin: 0px auto;
+	
 	padding-top: 10px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -177,7 +175,8 @@ section#content ul li:hover {
 }
 
 section#content ul li div.postDate {
-	float: right;
+	float: left;
 	font-size: 0.75em;
 	line-height: 2em;
+	margin-right: 25px;
 }
